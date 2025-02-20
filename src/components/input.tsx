@@ -1,5 +1,7 @@
 import { ComponentProps } from "react";
 import { Mail } from "lucide-react";
+
+
 interface InputProps extends ComponentProps<"input"> {
     error?: boolean
 }
@@ -15,4 +17,4 @@ export function Input({error = false, ...props}: InputProps) {
       <input className="flex-1 outline-0 placeholder-gray-400" {...props} />
     </div>
   );
-}
+} 
